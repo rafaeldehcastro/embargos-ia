@@ -154,6 +154,25 @@ python src/train.py
 - Implementar data augmentation específico para textos legales
 - Agregar explicabilidad de predicciones con LIME o SHAP
 
+  NOTA POS-REUNIÓN:
+- Otra cosa que saltamos aquí y que no estaba en el scope es verificar cuando se introduce un documento que no cae dentro de las categorías establecidas, para ello podrían revisarse estas aproximaciones:
+  1. Threshold
+Establecer un umbral mínimo de probabilidad (ej: 0.70). Si la predicción máxima está por debajo, clasificar como "Desconocido" o "Requiere revisión manual". Ventaja: Simple de implementar. Desventaja: No siempre funciona si el modelo está muy confiado en categorías incorrectas (bias).
+
+2. Entropía
+Calcular la entropía de las probabilidades. Si todas las clases tienen probabilidades similares (alta entropía), indica incertidumbre y posible documento fuera de categoría, muy similar a lo que hablamos con el balanceo. Ventaja: Detecta indecisión del modelo. Desventaja: Requiere calibración de umbrales.
+
+3. Detección de Outliers
+Usar embeddings para medir la distancia del documento a los ejemplos de entrenamiento. Si está muy lejos de todos clasificar como outlier. Ventaja: Más robusto, detecta patrones diferentes. Desventaja: Más complejo de implementar, pues toca agregar código medianamente-robusto ej Distancia de Mahalanobis, Autoencoders o One-Class SVM sobre los embeddings
+
+
+4. Clase "Otros" en el Dataset
+Entrenar el modelo con una quinta clase "Otros" que contenga textos legales genéricos que no son Embargo, Desembargo, Requerimiento, Traslado. Ventaja: El modelo aprende explícitamente qué NO clasificar. Desventaja: Requiere ejemplos representativos de "Otros", lo cual puede ser exhaustivo en el entrenamiento.
+
+Claro, tambien se pueden hacer combinaciones entre ellas :) 
+
+
+
 ## Autor
 
 Desarrollado como prueba técnica para el rol de Ingeniero de Desarrollo en IA por Rafael Castro.
