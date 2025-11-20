@@ -36,17 +36,9 @@ ENV/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Models (archivos grandes)
-*.bin
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-models/*/checkpoint-*/
-models/*/model.safetensors
-models/*/pytorch_model.bin
-models/*/vocab.txt
-models/*/tokenizer.json
+# Models (archivos grandes - ignorar todo en models/ excepto .gitkeep)
+models/*
+!models/.gitkeep
 
 # Sistema
 .DS_Store
