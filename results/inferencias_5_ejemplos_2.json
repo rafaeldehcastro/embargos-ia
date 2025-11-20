@@ -1,0 +1,107 @@
+[
+  {
+    "texto": "El juzgado ordena el levantamiento de las medidas cautelares sobre la cuenta del demandado.",
+    "prediccion": {
+      "tipo_documento": "Desembargo",
+      "probabilidad": 0.9761
+    }
+  },
+  {
+    "texto": "Se decreta embargo de los bienes muebles ubicados en la dirección indicada.",
+    "prediccion": {
+      "tipo_documento": "Embargo",
+      "probabilidad": 0.9825
+    }
+  },
+  {
+    "texto": "El despacho requiere al banco remitir certificación actualizada de los saldos.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.9735
+    }
+  },
+  {
+    "texto": "Se traslada a la parte demandada copia del escrito presentado por la parte actora.",
+    "prediccion": {
+      "tipo_documento": "Traslado",
+      "probabilidad": 0.9752
+    }
+  },
+  {
+    "texto": "Se solicita al juzgado informar sobre el estado actual del proceso ejecutivo.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.9805
+    }
+  },
+  {
+    "texto": "El juzgado dispone el levantamiento de la medida de embargo sobre la cuenta 364007.",
+    "prediccion": {
+      "tipo_documento": "Desembargo",
+      "probabilidad": 0.9776
+    }
+  },
+  {
+    "texto": "El juzgado autoriza el desembargo de los fondos retenidos en Bancolombia.",
+    "prediccion": {
+      "tipo_documento": "Desembargo",
+      "probabilidad": 0.9788
+    }
+  },
+  {
+    "texto": "El despacho judicial solicita los movimientos financieros de Martínez.",
+    "prediccion": {
+      "tipo_documento": "Embargo",
+      "probabilidad": 0.4896
+    }
+  },
+  {
+    "texto": "El despacho judicial decreta embargo de los ahorros en Banco de Occidente.",
+    "prediccion": {
+      "tipo_documento": "Embargo",
+      "probabilidad": 0.9742
+    }
+  },
+  {
+    "texto": "Se requiere al banco reporte actualizado de las cuentas afectadas.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.9477
+    }
+  },
+  {
+    "texto": "Se remite oficio al Juzgado 982625 de Ejecución para la continuación del trámite.",
+    "prediccion": {
+      "tipo_documento": "Traslado",
+      "probabilidad": 0.9615
+    }
+  },
+  {
+    "texto": "Se requiere al banco reporte actualizado de las cuentas afectadas.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.9477
+    }
+  },
+  {
+    "texto": "Notifíquese a la entidad financiera la liberación de los recursos de Ramírez.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.965
+    }
+  },
+  {
+    "texto": "Se requiere al banco BBVA remitir los extractos de la cuenta 329408.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.9805
+    }
+  },
+  {
+    "texto": "Se solicita al banco Davivienda enviar los estados de cuenta de los últimos tres meses.",
+    "prediccion": {
+      "tipo_documento": "Requerimiento",
+      "probabilidad": 0.9828
+    }
+  }
+]
