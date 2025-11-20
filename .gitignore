@@ -41,7 +41,12 @@ ENV/
 *.pt
 *.pth
 *.ckpt
+*.safetensors
 models/*/checkpoint-*/
+models/*/model.safetensors
+models/*/pytorch_model.bin
+models/*/vocab.txt
+models/*/tokenizer.json
 
 # Sistema
 .DS_Store
